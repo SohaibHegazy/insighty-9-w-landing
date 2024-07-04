@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Graph Your Data</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="csv_file" accept=".csv">
+    <button type="submit">Upload and Graph</button>
+</form>
+{% if plot_url %}
+    <img src="{{ plot_url }}" alt="CSV Data Plot">
+{% else %}
+    <p>No plot available. Please upload a CSV file.</p>
+{% endif %}
+{% endblock %}

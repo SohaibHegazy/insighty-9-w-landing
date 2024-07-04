@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <h1>Convert Excel to CSV</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="excel_file">
+        <button type="submit">Upload and Convert</button>
+    </form>
+</div>
+{% endblock %}

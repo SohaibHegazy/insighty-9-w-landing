@@ -1,0 +1,130 @@
+/* Styles for Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo a {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styles for Cover Section */
+.cover {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.cover-photo {
+  width: 100%;
+  height: auto;
+}
+
+.cover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.cover-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cover-content button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+}
+
+.cover-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for Main Content */
+main {
+  padding: 20px;
+}
+
+/* Styles for Content Section */
+.content-section {
+  padding: 20px;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content-photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+.content h3 {
+  margin-top: 0;
+}
+
+/* Styles for Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+footer nav ul li {
+  margin: 0 15px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}

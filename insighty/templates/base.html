@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Insighty</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="{% url 'home' %}">Insighty</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'convert_home' %}">Convert</a></li>
+                <li><a href="{% url 'graph_home' %}">Graph</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'convert_home' %}">Convert</a></li>
+                <li><a href="{% url 'graph_home' %}">Graph</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

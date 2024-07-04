@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- Cover Section with Photo -->
+<section class="cover">
+    <img src="{% static 'images/cover-photo.jpg' %}" alt="Cover Photo" class="cover-photo">
+</section>
+<section>
+    <div class="app-button">
+      <button onclick="window.location.href='/graph'">Graph Your Data</button>
+      <button onclick="window.location.href='/convert'">Convert to CSV</button>
+    </div>
+</section>
+
+<!-- New Section with Two Paragraphs and Photos -->
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<section class="content-section">
+    <div class="content">
+        <h2>Apps Features and How to Use:</h2>
+    </div>
+    <div class="content">
+        <h3>1- Upload excel file</h3>
+        
+        <p>In this step you will use the "Convert" App to upload our excel file that includes our data.</p>
+        <img src="{% static 'images/photo1.jpg' %}" alt="Photo 1" class="content-photo">
+    </div>
+    <div class="content">
+        <h3>2- Download the converted file (CSV)</h3>
+        
+        <p>After you choose your excel file, just click the "upload and convert" button as shown in the picture and a download window will open to allow you to download the file in the new (CSV) format.</p>
+        <img src="{% static 'images/photo2.jpg' %}" alt="Photo 2" class="content-photo">
+    </div>
+    <div class="content">
+        <h3>3- Upload the CSV file to graph</h3>
+        
+        <p>Now it's time to graph your data. Just upload the converted file using the "Graph" App.
+            Press the "Choose File" button to choose your CSV file to graph.
+        </p>
+        <img src="{% static 'images/photo3.jpg' %}" alt="Photo 3" class="content-photo">
+    </div>
+    <div class="content">
+        <h3>4- Get your graph</h3>
+        <p>You are now just one click away from getting your graph. Just click the "Upload and Graph" button and the App will show the graph in a blink of an eye.</p>
+        <img src="{% static 'images/photo4.jpg' %}" alt="Photo 4" class="content-photo">
+        
+    </div>
+</section>
+
+<section>
+  <p>
+    <h2>About Insighty</h2>
+    Insighty is a web app that aims to convert the meaningless data into thoughtful insights. This is achieved by the built-in App "Graph", that takes a data file in CSV format and plot graphs. This Idea was inspired when the creators were discussing the data issues with some data scientists, it was found that converting the data into graphs would be beneficial to many people in many different fields.
+  </p>
+  <p>  
+    Because most of our data are in excel rather than CSV format, Insighty has a built-in App to convert the excel files into downloadable CSV.
+  </p>
+  <p>    
+    The future development of Insighty will add some other helpful tools, such as dynamic graphs, selecting graph type, etc...
+  </p>
+</section>
+{% endblock %}
